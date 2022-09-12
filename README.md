@@ -1,3 +1,3 @@
 # ED
 
-Questoes de ED disponibilizadas pela UFC - Quixadá
+Questoes de Estruturas de dados disponibilizadas pela UFC - Quixadá
