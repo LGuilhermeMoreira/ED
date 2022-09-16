@@ -1,4 +1,7 @@
 // array
+/*
+o x da questão: Leia um vetor de tamanho n (quantidade de dominós) , e diga se ele está ordenado de forma crescente. 
+*/
 #include<iostream>
 using namespace std;
 

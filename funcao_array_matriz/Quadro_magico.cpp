@@ -1,4 +1,7 @@
 // matriz
+/*
+o algoritomo desenvolvido determina se a soma de todos os eixos de um quadrado (3 x 3) são iguais
+*/
 #include<iostream>
 using namespace std;
 

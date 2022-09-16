@@ -1,4 +1,7 @@
 // string
+/*
+Ação: Dada uma frase, imprima "sim" se as palavras estiverem ordenadas e "nao" caso contrario.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,14 @@
 // string 
+/*
+Analise cada palavra.
+
+Regras:
+
+Float tem o ponto.
+Int não tem ponto.
+Int e float podem ser negativos.
+Se existir pelo menos um alfabético então é string.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 

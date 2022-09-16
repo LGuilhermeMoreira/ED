@@ -1,4 +1,7 @@
 // string
+/*
+ Ação: Dado um texto, formate como for pedido (M - Toda maiúscula, m - toda minuscula, p - primeira maiúscula, i - inverter case)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,4 +1,10 @@
 // struct
+/*
+Ação: Leia um vetor de alunos e uma matrícula m,
+ e em seguida percorra o vetor de alunos procurando o primeiro aluno que possui matrícula igual a m. 
+ Ao encontrar o aluno com matrícula m, imprima o nome e a média do aluno. 
+ Se nenhum aluno tem matrícula m, imprima "NAO ENCONTRADA".
+*/
 #include<iostream>
 #include<iomanip>
 using namespace std;
@@ -8,7 +14,7 @@ struct aluno{
     string nome;
     float media;
 
-    void ler(){
+    void ler(){ // criando a função de ler
         cin >> matricula;
         cin.ignore();
         getline(cin, nome);
@@ -30,7 +36,7 @@ int main(){
     cin >> matricula;
 
     for(int i = 0; i < tamanho_vetor; i++){
-        if(estudante[i].matricula == matricula){
+        if(estudante[i].matricula == matricula){ // determina se tem matricula
             cout << estudante[i].nome << endl;
             cout << fixed << setprecision(1) << estudante[i].media << endl;
             return 0;

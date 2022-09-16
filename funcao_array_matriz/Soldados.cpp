@@ -1,4 +1,8 @@
 // matriz
+/*
+o algoritomo desenvolvido conta quantas vezes um soldado com numeração de fardamento menor está 
+atrás de um maior. 
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
