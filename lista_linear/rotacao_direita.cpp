@@ -7,14 +7,14 @@ void right_rotation(vector<int> &vet, int nrot)
     if (nrot == 0)
         return;
 
-    int aux = vet[vet.size() - 1];
+    int aux = vet[vet.size() - 1]; // aux guarda o ultimo numero de vet
 
     for (int i = vet.size() - 1; i > 0; i--)
     {
         vet[i] = vet[i - 1];
     }
 
-    vet[0] = aux;
+    vet[0] = aux; // girando uma unica vez o numero da direita
 
     nrot--;
 
