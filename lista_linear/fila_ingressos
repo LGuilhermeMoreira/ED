@@ -1,0 +1,52 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+vector<int> retonra_retirada(vector<int> &lista,vector<int> &retirada){
+    for(int i = 0; i < retirada.size(); i++){
+        auto it = lista.begin();
+        int aux = retirada[i];
+        
+        for(int j = 0; j < lista.size(); j++){
+            if(*it == aux){
+                lista.erase(it);
+            }else{
+                it++;
+            }
+        }
+    }
+
+    return lista;
+}
+
+
+
+int main(){
+    int num_fila,num_retirada;
+    cin >> num_fila; // lento o tamanho da fila
+    vector<int> fila; // criando vector
+    
+    for(int i=0;i<num_fila;i++){
+        int temp;
+        cin >> temp;
+        fila.push_back(temp); // adicionando elementos na fila
+    }
+
+    cin >> num_retirada; // lendo o numero de retiradas
+
+    vector<int> retirada; // criando vector
+
+    for(int i=0;i<num_retirada;i++){ // vendo os numeros que deseja retirar
+        int temp;
+        cin >> temp;
+        retirada.push_back(temp);
+    }
+
+    fila = retonra_retirada(fila,retirada); // retirando os numeros desejados
+
+    for(int i = 0; i < fila.size(); i++){ // printando
+        cout << fila[i] << " ";
+    }
+
+    cout << endl;
+}
