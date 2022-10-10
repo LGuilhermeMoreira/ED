@@ -6,7 +6,7 @@ Para cada sequência de consultas, determine quantas vezes ela ocorre na lista d
 #include <vector>
 using namespace std;
 
-int matchString(vector<string> a, string b)
+int compara_string(vector<string> a, string b)
 {
     int cont = 0;
     for (int i = 0; i < a.size(); i++)
@@ -16,14 +16,25 @@ int matchString(vector<string> a, string b)
             cont++;
         }
     }
-    // cout << "valor de cont: " << cont << endl;
     return cont;
+}
+
+int *matchString(vector<string> a, vector<string> b)
+{
+    int *aux = new int[b.size()];
+
+    for (int i = 0; i < b.size(); i++)
+    {
+        aux[i] = compara_string(a, b[i]);
+    }
+
+    return aux;
 }
 
 int main()
 {
     int con, bus;
-    vector<int> vec;
+    int *v = nullptr;
     cin >> con;
     cin.ignore();
 
@@ -44,19 +55,17 @@ int main()
         cin.ignore();
     }
 
+    v = matchString(consulta, busca);
+
     for (int i = 0; i < bus; i++)
     {
-        vec.push_back(matchString(consulta, busca[i]));
-    }
-
-    for (int i = 0; i < vec.size(); i++)
-    {
-        if (i == vec.size() - 1)
+        if (i == bus - 1)
         {
-            cout << vec[i];
+            cout << v[i];
             break;
         }
-        cout << vec[i] << " ";
+        cout << v[i] << " ";
     }
+
     cout << endl;
 }
