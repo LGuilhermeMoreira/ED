@@ -1,3 +1,4 @@
+/*desloca os elementos do vetor a direita*/
 #include <iostream>
 #include <vector>
 using namespace std;

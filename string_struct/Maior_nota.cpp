@@ -5,6 +5,7 @@ Ação: Seu programa deve então ler os valores dos registros dos dois alunos
 */
 #include<iostream>
 #include<iomanip>
+#include<string>
 using namespace std;
 
 struct boletin{
