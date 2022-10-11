@@ -156,6 +156,7 @@ public:
 };
 
 /* NAO MEXA DAQUI PRA BAIXO */
+//
 int main()
 {
     string line, cmd;
