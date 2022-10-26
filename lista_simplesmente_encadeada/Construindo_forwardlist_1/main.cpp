@@ -1,4 +1,4 @@
-// NAO MEXA NESTE ARQUIVO, ELE JA ESTA PRONTO PARA SER USADO PELO MOODLE
+
 #include <iostream>
 #include <sstream>
 #include <string>
