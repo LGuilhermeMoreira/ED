@@ -14,7 +14,7 @@ vector<Pos> get_vizinhos(Pos p){
     return {{p.l, p.c - 1}, {p.l - 1, p.c}, {p.l, p.c + 1}, {p.l + 1, p.c}};
 }
 
-// tratando os valores possiveis
+// tratando os vizinhos possiveis
 vector<Pos> tratando_vecotor(vector<Pos> v,int linha,int coluna, vector<string> &mat){
     vector<Pos> tratados; // vetor a ser retonado
     for(int i = 0; i < v.size(); i++){
@@ -65,6 +65,11 @@ void show_way(int nl, int nc,Pos inicio, Pos fim, vector<string> &mat){
                 pilha.push(v);
             }
         }
+        /*for(string line : mat)
+            cout << line << endl;
+        char c;
+        cin >> c;
+        cin.ignore();*/
     }
 }
 
